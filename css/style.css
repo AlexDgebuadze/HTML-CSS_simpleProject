@@ -51,7 +51,7 @@ width: 230px;
 
 .item2{
 	width: 400px;
-	height: 184px;
+	height: 185px;
     margin-left: 15px;
 
 	background: #F1F1F1
@@ -70,3 +70,58 @@ vertical-align: top;
 	margin-top: 20px;
 	margin-right: 20px;
 }
+
+.Img{
+	margin-top: 20px;
+	width: 48px;
+}
+
+.firstImg{
+	width:  270px;
+}
+article{
+margin: 30px auto 60px;	
+}
+.article{
+	margin-top:15px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.parag1{
+width: 920px;
+vertical-align: top;
+margin-left: 30px;
+color: #000000
+
+}
+.ls{
+	margin-bottom: 15px;
+}
+.imgM{
+	margin-top: 20px;
+}
+
+.text-h3{
+color: #667AB6;
+margin-bottom: 5px;
+
+}
+.contact-li{
+	margin-bottom: 5px;
+}
+
+.contact{
+	height: 400px;
+	padding-top: 45px;
+	padding-left: 20px;
+	margin-top: 80px;
+	background: #E6E6E6;
+}
+.contactD{
+	margin-left: 20px;
+	margin-top: 2px;
+	margin-right: 50px;
+
+}
+
+
