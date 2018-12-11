@@ -1,119 +1,218 @@
-html body{
+body html{
 	width: 100%;
 	height: 100%;
-
-}
-
-p{
-	font-family: 'Playfair Display', serif;
 }
 .logo{
-	float: left;
-	margin-left: 10%;
-	margin-right: 5%;
-	vertical-align: baseline;
+	height: 35px;
 }
 
-.head{
+.chosen{
 
-	margin-top: 2%;
+color: #D2C6C6;
+}
+
+.dispFlex{
 	display: flex;
-	flex-wrap: nowrap;
 }
-.navigation{
-	margin-top: 1%;
-	width: 100%;
-	vertical-align: bottom;
-	margin-left: 10%;
+
+header{
+	width: 90%;
+	display: flex;
+margin-left: 8%;
+margin-right: 15%;
+margin-top: 1%;
+}
+.navigation {
+display: flex;
+    margin-left: 12%;
+    width: fit-content;
+}
+.nav-ul{
+	display: flex;
+		 padding-top :3%;
+         width: fit-content;
 }
 
 .nav-ul-li{
-	float: right;
 	margin-left: 5%;
-	margin-right: 5%;
+	margin-right: 8%;	
+	font-size: large;
+}
+.search{
+	color: #C85A30;
+}
+i{
+	margin-left: 5%;
+	font-size: x-large;
+}
+.nav-div{
+	margin-left: 8%;
+	display: flex;
+	width: fit-content;
+}
+.nav-ul-li2{
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
 }
 
+main{
+	height: 100%;
+	background:#E6E6E6;
 
-a{
-	color: #616161;
- font-family: 'Ubuntu', sans-serif;
 }
 
+.pseudo{
+	margin-top: 2%;
+	height: 5px;
+	background:#E6E6E6;
+}  
 
+.mainPic{
+	margin-top: 2%;
+    background-image: url(../img/banner.png) ;
+    background-size: contain;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat; 
+   
+}
+.blue-box{
+	margin-top: 2%;
+	background : #363D96;
+    height: fit-content;
+   
 
-.head{
-	width: 100%;
 }
 
-
-.float-left{
-	float: left;
+.text-h3{
+	font-size: 20px;
+	text-align:left;
+	padding-top: 2%;
+	padding-left: 3%;
+	text-decoration-color: #000000;
+	color: white;
 }
-.float-right{
-	float: right;
-}
-.mainPic img{
-	 padding-top: 3.5%;
-    padding-left : 5.5%;
-    padding-bottom: 3.5%;
-    padding-right: 4.5%;
-	padding-bottom:  5%;
-	width: 90%;
-	vertical-align: top;
-}
-
-
-.color{
-	color:#f0f0f0;
-}
-
-
-
-
-.Flex{
-	flex-wrap: nowrap;
+.parentBox{
+	padding-bottom: 3%;
+	padding-left: 3%;
+	padding-top: 2%;
+	padding-right: 3%;
 	display: flex;
 	justify-content: space-between;
 }
-
-
-
-.gray-box div{
-	margin-top: 3%; 
-	display: flex;
-	justify-content: center; 
+.box2{
+   float: left;
+}
+.colorBlue{
+	color: #3C57A6;
 }
 
-.textBox form button{
-	border: none;
-	background: transparent;
-	right: 4%;
-	top: 10%;
+.gray-Box{
+	background:#BCCCD3;
 }
-.textBox{
+.allbox{
+	margin-top: 3%;
+}
+
+.cont-pics{
+	padding-left: 3%;
+	height: 190px;
+	width: 200px;
+}
+.picText{
+	padding-top: 10px;
 	text-align: center;
-	padding-top: 5%;
-}
-.footer{
-	margin-top: 8%;
-	width: 100%;
-	height: 120px;
-	background: #f0f0f0;
-}
+	margin-left: 3%;
+	background:#E6E6E6;
+	width: 200px;
+	height: 25px;
 
-
-.mainDiv{
-	width: 100%;
-	height: 100%;
+}
+.allbox{
+	padding-bottom: 2.5%;
+	padding-right: 3%;
+	padding-left: 3%;
 	display: flex;
-	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.box{
+	margin-right: 10%;
+}
+
+.anotherDiv{
+	justify-content: center;
+    align-items: center;
+	width: 80%;
+display: flex;
+padding-top: 2%;
+padding-left: 3%;
+padding-bottom: 3%;
+}
+
+.childBox{
+	height: auto;
+	display: flex;
+	width: 450px;
 	
 }
-ul{
-	margin-right: 5%; 
-	display: flex;
+.divText{
+	color: #363D96;
+	padding-bottom: 2%;
 }
-.footer-li{
-	margin-left: 6%;
-	margin-right: 6%; 
+.secBox{
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	background:white;
+}
+
+.footerDiv{
+	width: 90%;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+.underHeader{
+margin-top: 2%;
+background:#BCCCD3;
+display: flex;
+justify-content: space-between;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 8%;
+padding-right: 5%;
+}
+
+.margin{
+	padding-top: 2%;
+	padding-left: 8%;
+	padding-right: 5%;
+}
+
+.fas{
+	padding-bottom: 5px;
+}
+.newsIMG{
+	width: 300px;
+	height: 250px;
+}
+
+.paragText{
+    
+    padding-left: 2%;
+	
+}
+
+
+.paragText1{
+    margin-top:  2%;
+    padding-left: 8%;
+    padding-right: 5%;
+	
 }
