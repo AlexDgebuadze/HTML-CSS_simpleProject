@@ -1,0 +1,74 @@
+@import '../module/variable.scss';
+@import '../module/mixins.scss';
+@import '../module/reset.scss';
+
+
+head body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    padding-top: $PaddingTop;
+    @include display(flex);
+    @include flex(center,space-between);
+}
+.nav-ul{
+    padding-right: $PaddingRight;
+    @include display(flex);
+}
+
+.logo{
+    padding-left: $PaddingLeft;
+}
+ 
+
+a{
+    padding-left: 40px;
+    padding-right: 40px;   
+}
+
+section{
+    padding-top: 100px;
+    @include display(flex);
+    @include flex(center,center);
+    img{
+        @extend %img;
+    }
+}
+.box{
+    width: 445px;
+}
+
+.link{
+    font-size: $LargeFont;
+    color: $ColorPurple;
+    text-decoration: none;
+}
+
+.title{
+    font-size: $SmallFont;
+    padding-top: 25px;
+    padding-bottom: 15px; 
+}
+.headText{
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.wraper{
+    margin-top: 80px;
+width: 100%;
+@include flex(center,center);
+}
+
+button{
+    margin-left: 40%;
+    height: 45px;
+    width: 200px;
+    border-color: $ColorPurple;
+    background-color: transparent;
+    @include flex(center,center);
+}
+
+
