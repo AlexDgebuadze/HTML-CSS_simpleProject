@@ -1,0 +1,29 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+
+.MyFooter{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.FooterIcons{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+   
+}
+.Author{
+padding-bottom: 15px;
+}
+.smallIcons{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+}

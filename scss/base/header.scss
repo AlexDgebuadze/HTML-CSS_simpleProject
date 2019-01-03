@@ -1,0 +1,101 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+header{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+}
+
+
+header{
+    .navbar{
+        padding-bottom: 22px;
+    }
+    @include paddingLR($paddingLeft,$paddingRight);
+    @include paddingTB($paddingTop,$paddingBottom);
+    background-color: black;
+}
+.logo{
+    width: 80px;
+    height: 27px;
+}
+.mb-4{
+    margin-bottom: 0.09rem!important;
+}
+
+.HeaderTextSize{
+    color: $colorAsh;
+    font-family: 'Open Sans Semibold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-size: $fontSizeSmall;
+}
+
+
+@media  (max-width:950px) {
+  
+    header{
+        @include paddingLR(25px,25px);
+    }
+
+
+	.nav-item{
+        @include paddingLR(0,15px);
+    }
+  
+
+
+}
+
+
+@media  (max-width:680px) {
+  
+    header{
+        @include paddingLR(0px,0px);
+    }
+
+
+	.nav-item{
+        @include paddingLR(0,0px);
+    }
+  
+
+
+}
+
+@media  (max-width:550px) {
+
+    .logo{
+        height: 17px;
+        width: 42px;
+    }
+    .HeaderTextSize{
+        font-size: 9px;
+    }
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+
+    }
+    .navbar{
+        padding: 0.5rem 0rem;
+    }
+
+
+
+}
+@media  (max-width:358px) {
+
+    .logo{
+        margin-left:135px;
+        height: 18px;
+        width: 42px;
+    }
+    
+
+
+}

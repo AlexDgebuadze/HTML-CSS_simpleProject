@@ -1,0 +1,28 @@
+@mixin display($property) {
+    display:$property;
+}
+
+@mixin paddingLR($left,$right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+@mixin paddingTB($top,$bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin marginLR($left,$right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+@mixin marginTB($top,$bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin flex ($justify-content, $align-items) {
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+@mixin border ($size, $type, $color) {
+    border:$size $type $color;
+}

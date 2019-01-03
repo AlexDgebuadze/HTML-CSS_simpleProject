@@ -1,0 +1,279 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+.tabs{
+    background-color:rgba(245, 245, 245, 1);
+    @include paddingLR($paddingLeft+45px,$paddingRight+45px);
+    @include paddingTB($paddingTop+100px,$paddingBottom+100px);
+}
+
+.nav-pills .nav-link {
+     border-radius: 0; 
+}
+
+.nav-pills{
+    display: inline;
+}
+.nav-pills{
+    border-radius: 0px;
+}
+.special{
+    background-color:$colorP;
+}
+
+.tab{
+    color:white;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    border-color: azure;
+    background-color: black;
+    width: 110px;
+    height: 110px;
+    padding-top: 45px;
+    padding-left: 35px;
+    border-radius: 2px;
+}
+.tabsMainDiv{
+    display: flex;
+}
+
+
+.secTabsContent{
+   @include marginLR(170px,50px);
+   @include marginTB(15px,30px);
+   width: 482px;
+   height: 300px;
+}
+
+.tabsContentTitle{
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size:$fontSizeMed;
+}
+.tabLine{
+    background-color: $colorP;
+    @include marginTB(25px,25px);
+    width:62px;
+    height:2px;
+}
+.parag1{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    text-align: left;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    line-height: 20px;
+}
+.parag2{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    text-align: left;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    line-height: 20px;
+    @include marginTB(25px,35px);
+}
+.tabsbtn{
+    width: 145px;
+    height:49px;
+    font-family: 'Open Sans Semibold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+}
+
+@media  (max-width:1260px) {
+
+    .secTabsContent{
+        @include marginLR(100px,30px);
+        @include marginTB(15px,30px);
+        width: 450px;
+        height: 300px;
+     }
+  
+  }
+  @media  (max-width:1120px) {
+
+    .secTabsContent{
+        @include marginLR(80px,25px);
+        
+     }
+
+
+     .tabs{
+        @include paddingLR($paddingLeft+20px,$paddingRight+20px);
+        @include paddingTB($paddingTop+100px,$paddingBottom+100px);
+     }
+
+  .tImg{
+      width:290px;
+  }
+  }
+  @media  (max-width:998px) {
+
+    .secTabsContent{
+        @include marginLR(80px,25px);
+        
+     }
+
+
+     .tabs{
+        @include paddingLR(25px,25px);
+        @include paddingTB($paddingTop+30px,$paddingBottom+50px);
+     }
+
+  .tImg{
+      width:200px;
+  }
+  }
+  @media  (max-width:764px) {
+
+    .secTabsContent{
+        @include marginLR(35px,25px);
+        
+     }
+
+
+     .tabs{
+        @include paddingLR(15px,15px);
+        @include paddingTB($paddingTop+25px,$paddingBottom+50px);
+     }
+
+  .tImg{
+      width:200px;
+  }
+  }
+  @media  (max-width:674px) {
+
+    .secTabsContent{
+        @include marginLR(15px,15px);
+        
+     }
+
+
+     .tabs{
+        @include paddingLR(5px,5px);
+        @include paddingTB($paddingTop+15px,$paddingBottom+50px);
+     }
+
+  .tImg{
+      width:180px;
+  }
+  }
+  @media  (max-width:600px) {
+
+    .tab{
+    width: 63px;
+    height: 63px;
+    padding-top: 24px;
+    padding-left: 12px;
+    }
+
+    .secTabsContent{
+    
+        @include marginLR(5px,5px);
+        margin-bottom: 0px;
+        
+     }
+
+
+     .tabs{
+        @include paddingLR(2px,2px);
+        @include paddingTB($paddingTop,0px);
+     }
+
+  .tImg{
+      width:170px;
+      height: 144px;
+  }
+  .nav-pills{
+      height: 190px;
+  }
+  }
+  @media  (max-width:598px) {
+
+    .tabsContentTitle{
+        font-size:15px;
+    }
+    .tabLine{
+        width: 50px;
+        @include marginTB(7px,0px);
+    }
+    .parag1{
+        font-size: 13px;
+    }
+    .parag2{
+        @include marginTB(10px,10px);
+        font-size: 13px;
+    }
+  }
+  @media  (max-width:546px) {
+
+    .tabs{
+        padding-top: 15px;
+    }
+
+        .tabLine{
+            margin-top:3px;
+            margin-bottom: 3px;
+        }
+    .tabsbtn{
+    margin-top: 18px;
+    width: 118px;
+    height: 35px;
+    line-height: 0;
+    }
+    .parag1{
+        line-height: 18px;
+    }
+    .parag2{
+        line-height: 18px;
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+  }
+  @media  (max-width:490px) {
+    
+
+    .tab{
+        width: 45px;
+        height: 55px;
+        padding-top: 24px;
+        padding-left: 5px;
+        }
+
+    .tImg{
+        width: 100px;
+        height: 110px;
+    }
+    .secTabsContent{
+        height: 320px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .parag1{
+        line-height: 14px;
+    }
+    .parag2{
+        line-height: 14px;
+    }
+  }
+
+  @media  (max-width:415px) {
+    .secTabsContent{
+        height: 250px;
+    }
+  }
+  @media  (max-width:390px) {
+    .secTabsContent{
+        height: 350px;
+    }
+  }

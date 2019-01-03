@@ -1,0 +1,221 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+.PricingOptions{
+    background-color:rgba(245, 245, 245, 1);
+}
+
+.PricingOptionsMainDiv{
+    @include paddingLR(75px,60px);
+    @include paddingTB($paddingTop+100px,$paddingBottom+100px);
+}
+
+
+
+.TitleOfHead{
+    font-family: 'Raleway Regular', 'Raleway';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #212121;
+    text-align: center;
+    line-height: 43px;
+}
+.LineUnderTitle{
+    background-color: $colorP;
+    @include marginTB(25px,25px);
+    width:62px;
+    height:2px;
+    position: relative;
+    left: 47%;
+}
+.TextUnderLine{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    text-align: center;
+    line-height: 20px;
+}
+
+.HeadDivsOfOp{
+    justify-content:center;
+    text-align: center;
+    width: 343px;
+    text-align: center;
+    background: inherit;
+    background-color: rgba(51, 51, 51, 1);
+    color:white;
+
+    p{
+        position: relative;
+        top:40%;
+    }
+}
+
+.underHeadOfPricingOptions{
+    display: flex;
+    @include marginTB(50px,50px);
+    justify-content: space-between;
+
+}
+
+
+.packNameDiv{
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    height: 52px;
+}
+
+.priceOfPackDiv{
+    border-top: 1px solid;
+    border-top-color:#7A7A7A;
+    border-width: 1px;
+   height: 100px;
+    font-family: 'Raleway Bold', 'Raleway Regular', 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    height: 100px;
+    p{
+        font-size: 30px;
+    }
+}
+.monthlyPayDiv{
+    color: rgba(255, 255, 255, 0.498039215686275);
+    font-family: 'Open Sans Semibold Italic', 'Open Sans Regular', 'Open Sans';
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+    height: 52px;
+}
+
+.LineBetweenInfo{
+    background-color: $colorP;
+    width:343px;
+    height:6px;
+   
+   
+}
+.LinePlusOptions{
+    height:40px;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+
+}
+
+
+.DivOfP{
+    background-color: rgba(255, 255, 255, 0.498039215686275);
+    height: 40px;
+    width: 343px;
+    border: 0.5px solid;
+    border-color:#bcbcbc;
+    border-width: 0.5px;
+}
+.InfoTextOfPack{
+    position: relative;
+    text-align: center;
+    top: 30%;
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    
+}
+
+@media  (max-width:1188px) {
+    .underHeadOfPricingOptions{
+        flex-wrap: wrap;
+
+    }
+    .Enterprise{
+        position: relative;
+        left: 25%;
+    }
+
+
+    
+}
+
+@media (max-width:834px){
+
+    .underHeadOfPricingOptions{
+        justify-content: center;
+
+    }
+    .Enterprise{
+        position: relative;
+        left: auto;
+    }
+    .Professional{
+        margin-top:33.5px;
+    }
+
+}
+
+@media(max-width:726px){
+    .PricingOptionsMainDiv {
+        padding-left: 35px;
+        padding-right: 50px;
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+    .LineUnderTitle{
+        left: 45%;
+    }
+    .packNameDiv {
+        font-size: 18px;
+        height: 40px;
+    }
+    .HeadDivsOfOp{
+        .packName{
+        position: relative;
+        top: 35%;
+        }
+    }
+    .LineBetweenInfo {
+        width: 275px;
+    }
+
+
+    .HeadDivsOfOp{
+        width: 275px;
+    }
+    .DivOfP{
+        width: 275px;
+    }
+    
+    .priceOfPack{
+        top:2%;
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width: 484px){
+    .PricingOptionsMainDiv {
+        padding-left: 10px;
+        padding-right: 14px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .TitleOfHead {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}

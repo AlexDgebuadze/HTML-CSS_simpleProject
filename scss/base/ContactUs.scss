@@ -1,0 +1,60 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+.ContactUsForm{
+    display: flex;
+    justify-content: center;
+}
+.LeftSideOfBox{
+    margin-right: 30px;
+}
+
+.ContactUsForm{
+
+    margin-top:25px;
+    
+}
+
+.NormalInputBox{
+    width: 600px;
+}
+.MessageBox{
+    width: 600px;
+    height: 183px;
+}
+.LeftSideOfBox{
+    margin-top: 20px;
+}
+.SendM{
+    line-height: 1.5;
+    margin-top:25px;
+    display: table;
+    margin: 0 auto;
+    color: white;
+    width: 152px;
+    height: 44px;
+}
+
+
+@media (max-width:1190px){
+    .ContactUsForm{
+       flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 54px;
+    }
+}
+
+
+@media (max-width:685px){
+
+
+
+.NormalInputBox{
+    width: 300px;
+}
+.MessageBox{
+    width: 300px;
+    height: 100px;
+}
+}

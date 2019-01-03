@@ -1,0 +1,73 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+
+.Quote{
+    background-color:rgba(245, 245, 245, 1);
+    width: 235px;
+    height: 115px;
+}
+
+
+.Pquote{
+    padding: 15px;
+    font-family: 'Open Sans Italic', 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: #86878B;
+    text-align: left;
+}
+.fa-sort-down{
+    font-size: 60px;
+    position: relative;
+    bottom: 38px;
+    left: 20px;
+    color:rgba(245, 245, 245, 1);
+}
+.customerInfo{
+    display: flex;
+    position: relative;
+    bottom: 36px;
+}
+.CustomerName{
+    margin-bottom: 5px;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.CustomerPosition{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+}
+.CustomerNamePosition{
+    margin: 15px;
+}
+.AllQuotes{
+    justify-content:space-evenly;
+    display: flex;
+    margin-top:40px;
+}
+
+
+
+@media (max-width:905px){
+    .AllQuotes{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:449px){
+    .AllQuotes{
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,122 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+
+.pic2Section{
+    @include paddingLR($paddingLeft+30px,$paddingRight);
+    @include paddingTB($paddingTop+100px,$paddingBottom+100px);
+    background-color:rgba(245, 245, 245, 1);
+}
+
+.pic2SectionMainDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic2SecTitle{
+    margin-top:35px;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+.pic2SecText1{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    line-height: 20px;
+}
+.pic2SecLine{
+    @include marginTB(15px,15px);
+    width:55px;
+    height:2px;
+    background-color: $colorP;
+}
+
+
+
+.pic2SecText2{
+    @include marginTB(15px,15px);
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    line-height: 20px;
+}
+.city3{
+    padding-left: 35px;
+    width: 553px;
+    height: 403px;
+}
+@media  (max-width:1019px) {
+
+    .pic2SecLine{
+        @include marginTB(15px,15px);
+        width:55px;
+        height:2px;
+    }
+
+    .pic2Section {
+        padding-left: 48px;
+        padding-right: 15px;
+        padding-top: 53px;
+        padding-bottom: 53px;
+    }
+}
+
+@media  (max-width:876px) {
+    .pic2SectionMainDiv{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .city3 {
+        padding-left: 0px;
+        width: 489px;
+        height: 403px;
+    }
+    
+}
+
+
+
+@media  (max-width:870px) {
+    .pic2SecLine{
+        display: table;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+@media  (max-width:574px) {
+    .city3 {
+        padding-left: 0px;
+        width: 475px;
+        height: 385px;
+    }
+    .pic2Section {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 53px;
+        padding-bottom: 53px;
+    }
+}
+@media  (max-width:490px) {
+    .city3 {
+        padding-left: 0px;
+        width: 425px;
+        height: 280px;
+    }
+}
+@media  (max-width:458px) {
+    .city3 {
+        padding-left: 0px;
+        width: 262px;
+        height: 198px;
+    }
+}

@@ -1,0 +1,174 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+
+.WhyThisIsAwesomeMainDiv{
+    @include paddingLR($paddingLeft+30px,$paddingRight);
+    @include paddingTB($paddingTop+100px,$paddingBottom+100px);
+}
+
+
+
+
+
+.TitleOfHead{
+    font-family: 'Raleway Regular', 'Raleway';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #212121;
+    text-align: center;
+    line-height: 43px;
+}
+.LineUnderTitle{
+    background-color: $colorP;
+    @include marginTB(25px,25px);
+    width:62px;
+    height:2px;
+    position: relative;
+    left: 47%;
+}
+.TextUnderLine{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    text-align: center;
+    line-height: 20px;
+}
+
+.AwesomeSubContent{
+    width: 365px;
+}
+
+
+.IconsOfAwesome{
+    padding: 3px;
+    padding-top: 15px;
+
+    border: 1px solid;
+    border-color:#fc8a4a;
+    border-width: 1px;
+
+    border-radius: 8rem;
+    width: 70px;
+    height: 70px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #FF8B38;
+    text-align: center;
+}
+
+.AwesomeSubTitle{
+    @include marginTB(22px,22px);
+    width: 359px;
+    height: 24px;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+}
+.AwesomeSubText{
+    width: 359px;
+    height: 60px;
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    text-align: center;
+    line-height: 20px;
+}
+
+.subContentOfAwesome{
+    display: flex;
+    justify-content:space-between;
+    @include marginTB(60px,0px);
+}
+
+
+
+@media  (max-width:1255px) {
+    .WhyThisIsAwesomeMainDiv {
+        padding-left: 13px;
+        padding-right: 20px;
+        padding-top: 98px;
+        padding-bottom: 90px;
+    }
+  }
+
+  
+
+  @media  (max-width:1123px) {
+    .subContentOfAwesome{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+  
+
+    .WhyThisIsAwesomeMainDiv {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 90px;
+        padding-bottom: 88px;
+    }
+  }
+  @media  (max-width:870px) {
+   .pic2SecLeft{
+       text-align: center;
+   } 
+  }
+
+
+
+  @media  (max-width:571px) {
+  
+    .subContentOfAwesome{
+        margin-top:43px;
+    }
+    .optionOfWrap{
+        margin-top:15px;
+        margin-bottom: 15px;
+    }
+    .AwesomeSubTitle{
+        margin-top: 17px;
+    margin-bottom: 17px;
+    }
+
+
+    .LineUnderTitle {
+        left: 41%;
+    }
+
+
+
+  }
+
+  @media  (max-width:391px) {
+    .AwesomeSubText{
+        width: 100%;
+    }
+
+    .LineUnderTitle {
+        left: 40%;
+    }
+    .AwesomeSubTitle {
+        width:100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .optionOfWrap {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+
+  }

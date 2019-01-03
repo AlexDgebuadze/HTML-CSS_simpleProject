@@ -1,0 +1,154 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+.social{
+    @include paddingLR($paddingLeft+50px,$paddingRight+50px);
+    @include paddingTB($paddingTop+20px,$paddingBottom+20px);
+    border-bottom: groove;
+}
+
+.socLeft{
+    width: 380px;
+}
+.socTitle{
+    margin-bottom:5px;
+    width:300px;
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+.socText{
+    font-family: 'Open Sans Regular', 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #86878B;
+    line-height: 20px;
+    width: 380px;
+}
+
+
+.icons{
+    margin-left: 65px;
+    width:600px;
+    display: flex;
+    @include flex(space-between,center);
+
+}
+.socContent{
+    display: flex;
+}
+.iconFb{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+.iconTw{
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+
+.iconG{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+.iconP{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+.iconInst{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+.iconRss{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #CCCCCC;
+    text-align: center;
+}
+
+
+
+@media  (max-width:1175px) {
+    .social{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+  .resIcon{
+      font-size: 30px;
+  }
+  
+  }
+
+
+  @media  (max-width:968px) {
+
+    .social{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+  .resIcon{
+      font-size: 30px;
+  }
+  
+  }
+  @media  (max-width:769px) {
+
+    .social{
+        padding-top: 30px;
+    }
+
+  }
+
+
+
+
+
+
+  @media  (max-width:740px) {
+    .socText{
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 3px;
+      width: 310px;
+    }
+    .socTitle{
+        font-size: 15px;
+    }
+    .socContent{
+        flex-wrap: wrap;
+    }
+
+    .social{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  .icons{
+      font-size: 30px;
+      margin-left: 4px;
+  }
+  
+  
+  }

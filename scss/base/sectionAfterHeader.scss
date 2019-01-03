@@ -1,0 +1,202 @@
+@import 'module/var';
+@import 'module/fonts';
+@import 'module/mixins';
+
+
+.cityImg{
+    background-image: url('../img/city1.jpg');
+	background-position: center;
+	background-attachment:fixed; 
+	background-size: cover;
+	height: 555px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.sec1{
+	position: relative;
+}
+
+.secContent{
+	display: flex;
+}
+.card{
+	width: 360px;
+    height: 348px;
+}
+.form-control{
+	font-size:15px;
+	margin-top:15px;
+	border: none;
+    border-bottom: inset;
+	margin-left: 25px;
+	width: 280px;
+    height: 31px;
+    background-color: transparent;
+    font-family: 'Open Sans Regular', 'Open Sans';
+}
+.btn{
+	    line-height: 2.5;
+        background-color: $colorP;
+	    border-radius: 0; 
+}
+.card-header{
+	width: 360px;
+    height: 54px;
+	border:none;
+	font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.secLogo{
+	height: 65px;
+}
+.line{
+	@include marginTB(25px,25px);
+	margin-left: 3px;
+	height: 2px;
+	width: 70px;
+	background-color: aliceblue;
+}
+.sec1text{
+	margin-left: 3px;
+	width: 500px;
+	font-family: 'Raleway Light', 'Raleway Regular', 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+	font-size: 16px;
+    color: $colorB;
+    line-height: 23px;
+}
+.sec1title{
+	margin-top: 25px;
+	width: 550px;
+	font-family: 'Raleway Regular', 'Raleway';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color:white;
+    line-height: 43px;
+}
+.secContent{
+  position: absolute;
+  left: 150px;
+  top: 95px;
+  z-index: 0;
+
+}
+.Email{
+	@include marginTB(25px,25px);
+}
+.Download{
+	font-weight: 800;
+	margin-top:45px;
+	padding-bottom: 42px;
+	width: 161px;
+    height: 44px;
+	border-style: solid;
+	border-color: white;
+	color:white;
+	background: transparent;
+	
+}
+.Download:hover{
+	background-color: white;
+	color: black;
+}
+
+
+@media  (max-width:1175px) {
+  
+  .secContent{
+	position: absolute;
+    left: 25px;
+    top: 94px;
+    z-index: 0;
+  }
+  .container{
+	width: 41px;
+   }
+
+
+}
+@media  (max-width:968px) {
+	.cityImg{
+		height: 939px;
+	}
+    .secRight{
+		margin-left: 21px;
+		width: 83px;
+	}
+	.secLogo{
+		height: 70px;
+	}
+
+	.card{
+		width: 341px;
+		height: 343px;
+	}
+    .secLeft{
+		width:100%;
+	}
+
+	.secContent{
+		
+		flex-wrap: wrap;
+	}
+	
+  
+  
+  }
+
+  @media  (max-width:615px) {
+	 .card-header{
+		 width: 250px;
+	 } 
+	 .cityImg{
+		 height: 939px;
+	 }
+    .card{
+
+		width: 250px;
+	}
+	.form-control{
+		width:180px;
+	}
+	
+  
+  
+  }
+
+ 
+ 
+ @media (max-width: 580px){
+   .secLeft{
+	   width: 295px;
+   }
+
+
+
+   .secLogo{
+	   height:40px;
+   }
+
+   .sec1title{
+
+	   width: 310px;
+	   font-size: 25px;
+   }
+
+
+  .sec1text{
+	  width: 300px;
+  }
+	.secContent{
+		width: 3px;
+		left: 5px;
+		top: 54px;
+		z-index: 0;
+	  }
+	
+}
